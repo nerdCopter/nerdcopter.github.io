@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nerdCopter.github.io</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('nerdCopter-logo.svg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.10; /* Adjust this for transparency (0 = fully transparent, 1 = fully opaque) */
+            z-index: -1; /* Ensures this is behind any content */
+        }
+h1 {
+    padding-top: 20%;
+    text-align: center;
+}
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+    </style>
+</head>
+<body>
+    <h1 style="padding-top: 20%;">nerdCopter.github.io</h1>
+    <ul>
+        <li><a href="https://nerdcopter.github.io/motorMixerCalc/">Motor Mix Calculator</a></li>
+        <li><a href="https://nerdcopter.github.io/actual-rates.github.io/">kmitchel's Actual Rates calculator</a></li>
+    </ul>
+</body>
+</html>
