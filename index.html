@@ -8,7 +8,6 @@
         body {
             margin: 0;
         }
-
         body::before {
             content: '';
             position: absolute;
@@ -16,31 +15,81 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: url('nerdCopter-logo.svg'); /* Replace with your image path */
+            background-image: url('nerdCopter-logo.svg');
             background-size: cover;
             background-position: center;
-            opacity: 0.10; /* Adjust this for transparency (0 = fully transparent, 1 = fully opaque) */
-            z-index: -1; /* Ensures this is behind any content */
+            opacity: 0.10;
+            z-index: -1;
         }
-h1 {
-    padding-top: 20%;
-    text-align: center;
-}
-ul {
-    text-align: center;
-    list-style-position: inside;
-}
-ul li {
-      margin-bottom: 8px;
-}
+        .centered-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .centered-content {
+            text-align: left;
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 0.5em;
+        }
+        .bio {
+            font-size: 0.95rem;
+            color: #333;
+            margin: 0 0 1.2rem 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 1.2rem 0 0 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        ul li {
+            flex: 1;
+            min-width: 150px;
+            padding: 0.75rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+        ul li a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <h1 style="padding-top: 20%;">nerdCopter.github.io</h1>
-    <ul>
-        <li><a href='https://hackmd.io/@nerdCopter?tags=["FAQ"]'>nerdCopter's FAQ on hackmd.io</a></li>
-        <li><a href="https://nerdcopter.github.io/motorMixerCalc/">Motor Mix Calculator</a></li>
-        <li><a href="https://nerdcopter.github.io/actual-rates.github.io/">kmitchel's Actual Rates calculator</a></li>
-    </ul>
+    <div class="centered-container">
+        <div class="centered-content">
+            <h1>nerdCopter</h1>
+            <div class="bio">
+                <span style="font-size:0.92em;color:#555;">nerd: enthusiast or expert in technical subjects<br>copter: informal for helicopter or rotorcraft</span><br>
+                <br>
+                Novice developer. EmuFlight and Betaflight org member.<br>
+                <br>
+                <h2><a href="https://github.com/nerdCopter">GitHub Projects</a></h2>
+                <a href="https://github.com/nerdCopter/BlackBox_CSV_Render">BlackBox_CSV_Render</a>, <a href="https://github.com/nerdCopter/bbl_parser">bbl_parser</a>, <a href="https://github.com/nerdCopter/HelioRC-Spring-Docs">HelioRC-Spring-Docs</a>, <a href="https://github.com/nerdCopter/IMUF_Binaries">IMUF_Binaries</a>, <a href="https://github.com/nerdCopter/target-convert">target-convert</a>, and <a href="https://github.com/nerdCopter?tab=repositories&q=&type=source&language=&sort=">others</a> plus various utility/informational <a href="https://gist.github.com/nerdCopter">gists</a>.
+                <br>
+            </div>
+            <h2>Help and Tools</h2>
+            <ul>
+                <li><a href='https://hackmd.io/@nerdCopter?tags=["FAQ"]'>nerdCopter's FAQ on hackmd.io</a></li>
+                <li><a href="https://nerdcopter.github.io/motorMixerCalc/">Motor Mix Calculator</a></li>
+                <li><a href="https://nerdcopter.github.io/actual-rates.github.io/">kmitchel's Actual Rates calculator</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
